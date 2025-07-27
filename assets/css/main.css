@@ -3275,8 +3275,9 @@ background: linear-gradient(
 .call-to-action .cta-image-container .main-image {
   position: relative;
   z-index: 2;
-  max-height: 400px;
+  max-height: 600px;
   object-fit: contain;
+  border-radius: 25px;
 }
 
 .call-to-action .cta-image-container .floating-element {
@@ -5544,4 +5545,17 @@ background: linear-gradient(
   width: 4rem;
   height: auto;
   vertical-align: middle;
+}
+
+.cm{
+  margin-top: -9rem!important;
+}
+
+.img-fluidh img{
+ width: 80rem!important;
+ height: 120rem;
+}
+
+.icono{
+  width: 30px !important;
 }
