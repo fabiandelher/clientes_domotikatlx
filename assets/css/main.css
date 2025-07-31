@@ -1350,7 +1350,7 @@ background: linear-gradient(
   display: block;
   font-size: 32px;
   font-weight: 800;
-  color: var(--accent-color);
+  color: #ffffff;
   line-height: 1;
   margin-bottom: 4px;
 }
@@ -5543,7 +5543,7 @@ background: linear-gradient(
 
 
 .icono-huevo {
-  width: 4rem;
+  width: 26rem;
   height: auto;
   vertical-align: middle;
 }
