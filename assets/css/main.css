@@ -1098,12 +1098,13 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  padding: 160px 0 80px 0;
+  padding: 160px 0 90px 0;
   text-align: center;
   position: relative;
 }
+
 
 .page-title:before {
   content: "";
@@ -5609,3 +5610,86 @@ background: linear-gradient(
   color: #555;
   flex-grow: 1;
 }
+
+.curiosidad-card {
+  background-color: rgba(18, 161, 107, 0.1); /* verde hoja suave con transparencia */
+  border-left: 5px solid #12a16b; /* acento visual */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: transform 0.3s ease;
+}
+
+.curiosidad-card:hover {
+  transform: translateY(-4px);
+}
+
+img.rounded-4 {
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+img.rounded-4:hover {
+  transform: scale(1.03);
+}
+
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.imd {
+  width: 100%;
+  max-width: 50rem;
+  max-height: 20rem;
+  object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .imd {
+    max-height: 16rem;
+  }
+  .curiosidad-card {
+    margin-top: 1rem;
+    max-width: auto;
+  }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 28px;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float i {
+  display: block;
+}
+
+/* Animación de pulsación */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
